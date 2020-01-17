@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FXMLcontroleur">
+   <children>
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="750.0" style="-fx-background-color: #56cadc;">
+         <children>
+            <Label text="Informations réseaux" textAlignment="CENTER" textFill="#1b1b1a">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="400.0" prefWidth="750.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="221.0">
+               <children>
+                  <Label text="Nom machine locale:">
+                     <VBox.margin>
+                        <Insets left="10.0" top="60.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Nom complet machine locale:">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="IP machine locale:">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="IP boucle machine locale">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Entrez un nom de domaine:">
+                     <VBox.margin>
+                        <Insets left="10.0" top="65.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="idObtenirInfo" mnemonicParsing="false" onAction="#obtenirInfo" prefHeight="25.0" prefWidth="165.0" text="Obtenir Informations">
+                     <VBox.margin>
+                        <Insets left="10.0" top="35.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="nomId">
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="nomCplId">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="IpID">
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="ipBoucle">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="idNomDomaine">
+                     <VBox.margin>
+                        <Insets top="55.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="idInformation">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="279.0">
+               <children>
+                  <Label text="Machines de mon reseau local:">
+                     <VBox.margin>
+                        <Insets left="20.0" top="60.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="idListe" prefHeight="173.0" prefWidth="169.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="90.0" top="5.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <Button fx:id="idObtenirNom" mnemonicParsing="false" onAction="#obtenirNom" prefHeight="25.0" prefWidth="152.0" text="Obtenir nom complet ">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <TextField fx:id="idAffNom" prefHeight="25.0" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets left="30.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="idQuitter" mnemonicParsing="false" onAction="#quitter" text="Quitter">
+                     <VBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
